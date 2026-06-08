@@ -1,0 +1,17 @@
+{
+  "individual": [
+    { "name": "Anna", "points": 124 },
+    { "name": "Lukas", "points": 98 },
+    { "name": "Emma", "points": 76 }
+  ],
+  "groups": [
+    { "name": "The Müller Family", "points": 210 },
+    { "name": "Team Allgäu", "points": 188 },
+    { "name": "Alpine Kids Club", "points": 164 }
+  ],
+  "communityChallenge": {
+    "title": "Complete 100 hidden-gem check-ins this week",
+    "current": 42,
+    "target": 100
+  }
+}

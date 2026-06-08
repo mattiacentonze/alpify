@@ -1,0 +1,13 @@
+[
+  { "id": "castle-explorer", "name": "Castle Explorer", "description": "Visit 2 castle or culture locations.", "target": 2 },
+  { "id": "lake-seeker", "name": "Lake Seeker", "description": "Visit 2 lake or nature locations.", "target": 2 },
+  { "id": "green-traveller", "name": "Green Traveller", "description": "Complete 2 walking or biking check-ins.", "target": 2 },
+  { "id": "hidden-gem-hunter", "name": "Hidden Gem Hunter", "description": "Visit 3 low-crowding locations.", "target": 3 },
+  { "id": "alpine-rookie", "name": "Alpine Rookie", "description": "Collect your first Alpify stamp.", "target": 1 },
+  { "id": "family-adventurer", "name": "Family Adventurer", "description": "Complete a family-friendly trail quest.", "target": 1 },
+  { "id": "local-partner-supporter", "name": "Local Partner Supporter", "description": "Complete 2 quests with local partners.", "target": 2 },
+  { "id": "bike-trail-hero", "name": "Bike Trail Hero", "description": "Check in by bike at 2 places.", "target": 2 },
+  { "id": "culture-collector", "name": "Culture Collector", "description": "Visit 2 cultural stops.", "target": 2 },
+  { "id": "crowd-balancer", "name": "Crowd Balancer", "description": "Earn 30+ points from low or medium crowding places.", "target": 30 },
+  { "id": "quest-master", "name": "Quest Master", "description": "Complete 3 side quests.", "target": 3 }
+]

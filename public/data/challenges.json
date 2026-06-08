@@ -1,0 +1,7 @@
+[
+  { "id": "castle-details", "title": "Find all castle details", "description": "Complete cultural detail quests across demo castle and museum stops.", "current": 1, "target": 3, "reward": "Culture Collector boost" },
+  { "id": "family-lake-route", "title": "Complete the family lake route", "description": "Visit the lake path and family trail with at least one side quest.", "current": 1, "target": 2, "reward": "Family quest certificate" },
+  { "id": "partner-stamps", "title": "Collect 5 partner stamps", "description": "Use hotels, museums, bike rentals and tourist offices as physical stamp partners.", "current": 2, "target": 5, "reward": "Local partner bundle" },
+  { "id": "bike-low-crowding", "title": "Visit 3 low-crowding places by bike", "description": "Reach under-discovered places with sustainable mobility.", "current": 1, "target": 3, "reward": "Bike Trail Hero reward" },
+  { "id": "hidden-gems-route", "title": "Complete the Allgäu Hidden Gems Route", "description": "Combine village, lake, viewpoint and trail stops into one balanced route.", "current": 2, "target": 5, "reward": "Guided local trail discount" }
+]

@@ -1,0 +1,10 @@
+[
+  { "id": "bike-rental-discount", "name": "10% off bike rental", "partner": "Local Bike Partner", "requiredPoints": 12, "requiredQuests": 0, "description": "Unlock a mobility discount for a quieter route." },
+  { "id": "sportswear-discount", "name": "Sustainable sportswear discount", "partner": "Kempten Bike Hub", "requiredPoints": 24, "requiredQuests": 1, "description": "A demo partner perk for low-impact travel." },
+  { "id": "museum-voucher", "name": "Local museum voucher", "partner": "Allgäu Culture Desk", "requiredPoints": 16, "requiredQuests": 1, "description": "A small voucher that sends visitors to cultural partners." },
+  { "id": "local-postcard", "name": "Free local postcard", "partner": "Village Welcome Desk", "requiredPoints": 10, "requiredQuests": 1, "description": "A physical keepsake for a completed village quest." },
+  { "id": "hotel-breakfast", "name": "Partner hotel breakfast perk", "partner": "Allgäu Green Stay", "requiredPoints": 28, "requiredQuests": 2, "description": "A hospitality reward tied to distributed footfall." },
+  { "id": "family-certificate", "name": "Family quest certificate", "partner": "Kempten Tourist Office", "requiredPoints": 18, "requiredQuests": 2, "description": "A print-friendly certificate for families and schools." },
+  { "id": "guided-trail", "name": "Guided local trail discount", "partner": "Alpine Guide Studio", "requiredPoints": 35, "requiredQuests": 3, "description": "A discount that promotes local guides and safer exploration." },
+  { "id": "cafe-voucher", "name": "Local café voucher", "partner": "Seeblick Café", "requiredPoints": 20, "requiredQuests": 2, "description": "A partner café reward for visitors who explore beyond hotspots." }
+]
