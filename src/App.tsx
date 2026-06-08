@@ -21,6 +21,8 @@ interface AppData {
 }
 
 const pages: Page[] = ["home", "explore", "passport", "rewards", "leaderboard", "impact", "share"];
+const logoUrl = `${import.meta.env.BASE_URL}assets/alpify-logo.png`;
+const logoMarkUrl = `${import.meta.env.BASE_URL}assets/alpify-mark.png`;
 
 function pageFromHash(): Page {
   const value = window.location.hash.replace("#/", "") as Page;
@@ -70,7 +72,7 @@ export default function App() {
     return (
       <div className="grid min-h-screen place-items-center bg-soft p-6 text-center text-navy">
         <div>
-          <div className="mx-auto grid h-16 w-16 place-items-center rounded-3xl bg-alpine text-2xl font-black text-white">A</div>
+          <img src={logoMarkUrl} alt="Alpify" className="mx-auto h-20 w-20 rounded-3xl object-cover shadow-soft" />
           <p className="mt-4 font-black">Loading Alpify demo...</p>
         </div>
       </div>
@@ -144,6 +146,9 @@ function HomePage({ progress, onStart }: { progress: Progress; onStart: () => vo
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/20" />
         <div className="relative min-h-[520px] px-5 py-8 sm:px-10 lg:flex lg:min-h-[610px] lg:items-end">
           <div className="max-w-5xl pb-12">
+            <div className="mb-6 w-full max-w-[260px] rounded-[1.5rem] bg-white/95 p-3 shadow-soft backdrop-blur sm:max-w-[340px]">
+              <img src={logoUrl} alt="Alpify" className="w-full rounded-2xl object-contain" />
+            </div>
             <p className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-black backdrop-blur">EUSALP Alpine AI Hackathon MVP</p>
             <h1 className="mt-6 whitespace-nowrap text-[clamp(2.35rem,10vw,6.25rem)] font-black leading-none">Beyond the obvious</h1>
             <p className="mt-5 whitespace-nowrap text-[clamp(.56rem,2.8vw,1.2rem)] font-semibold leading-8 text-white/90">
@@ -355,13 +360,30 @@ function SharePage() {
   return (
     <div className="mx-auto max-w-2xl space-y-5 text-center">
       <header>
+        <img src={logoUrl} alt="Alpify" className="mx-auto mb-4 w-full max-w-[280px] rounded-[1.5rem] bg-white object-contain shadow-sm" />
         <p className="text-sm font-black uppercase tracking-wide text-alpine">Demo QR</p>
         <h1 className="text-3xl font-black">Share Alpify</h1>
         <p className="mt-2 text-sm leading-6 text-stone">Scan to try the Alpify demo on your phone.</p>
       </header>
       <section className="rounded-[2rem] bg-white p-6 shadow-soft sm:p-8">
         <div className="mx-auto grid aspect-square w-full max-w-[280px] place-items-center rounded-[2rem] bg-soft p-5">
-          {shareUrl ? <QRCodeSVG value={shareUrl} size={220} bgColor="#F6FAF4" fgColor="#102A43" level="M" /> : null}
+          {shareUrl ? (
+            <QRCodeSVG
+              value={shareUrl}
+              size={220}
+              bgColor="#F6FAF4"
+              fgColor="#102A43"
+              level="H"
+              imageSettings={{
+                src: logoMarkUrl,
+                x: undefined,
+                y: undefined,
+                height: 46,
+                width: 46,
+                excavate: true,
+              }}
+            />
+          ) : null}
         </div>
         <p className="mt-5 break-all rounded-2xl bg-cream p-3 text-sm font-bold text-navy">{shareUrl}</p>
         <p className="mt-4 text-sm leading-6 text-stone">

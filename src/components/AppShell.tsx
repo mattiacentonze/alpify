@@ -2,6 +2,8 @@ import { BarChart3, Gift, Home, Map, Medal, QrCode, Trophy, type LucideIcon } fr
 import type { ReactNode } from "react";
 import { DemoResetButton } from "./DemoResetButton";
 
+const logoMark = `${import.meta.env.BASE_URL}assets/alpify-mark.png`;
+
 export type Page = "home" | "explore" | "passport" | "rewards" | "leaderboard" | "impact" | "share";
 
 const navItems: { page: Page; label: string; icon: LucideIcon }[] = [
@@ -28,7 +30,9 @@ export function AppShell({ page, totalPoints, onNavigate, onReset, children }: A
       <header className="sticky top-0 z-40 border-b border-white/80 bg-soft/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <button type="button" onClick={() => onNavigate("home")} className="flex items-center gap-3 text-left">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-alpine text-lg font-black text-white shadow-soft">A</span>
+            <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl bg-white shadow-soft">
+              <img src={logoMark} alt="Alpify" className="h-full w-full object-cover" />
+            </span>
             <span>
               <span className="block text-lg font-black tracking-normal">Alpify</span>
               <span className="block text-xs font-semibold text-stone">Beyond the obvious</span>
