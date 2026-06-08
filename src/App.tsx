@@ -144,14 +144,14 @@ function HomePage({ progress, onStart }: { progress: Progress; onStart: () => vo
       <section className="relative overflow-hidden rounded-[2rem] bg-navy text-white shadow-soft">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-45" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/20" />
-        <div className="relative min-h-[520px] px-5 py-8 sm:px-10 lg:flex lg:min-h-[610px] lg:items-end">
+        <div className="relative min-h-[520px] px-4 py-7 sm:px-10 lg:flex lg:min-h-[610px] lg:items-end">
           <div className="max-w-5xl pb-12">
-            <div className="mb-6 w-full max-w-[260px] rounded-[1.5rem] bg-white/95 p-3 shadow-soft backdrop-blur sm:max-w-[340px]">
+            <div className="mb-5 w-full max-w-[220px] rounded-[1.5rem] bg-white/95 p-3 shadow-soft backdrop-blur sm:mb-6 sm:max-w-[340px]">
               <img src={logoUrl} alt="Alpify" className="w-full rounded-2xl object-contain" />
             </div>
-            <p className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-black backdrop-blur">EUSALP Alpine AI Hackathon MVP</p>
-            <h1 className="mt-6 whitespace-nowrap text-[clamp(2.35rem,10vw,6.25rem)] font-black leading-none">Beyond the obvious</h1>
-            <p className="mt-5 whitespace-nowrap text-[clamp(.56rem,2.8vw,1.2rem)] font-semibold leading-8 text-white/90">
+            <p className="inline-flex max-w-full rounded-full bg-white/15 px-3 py-2 text-xs font-black backdrop-blur sm:px-4 sm:text-sm">EUSALP Alpine AI Hackathon MVP</p>
+            <h1 className="mt-5 whitespace-nowrap text-[clamp(1.85rem,9.4vw,6.25rem)] font-black leading-none sm:mt-6">Beyond the obvious</h1>
+            <p className="mt-4 max-w-[22rem] text-base font-semibold leading-7 text-white/90 sm:mt-5 sm:max-w-none sm:whitespace-nowrap sm:text-[clamp(.9rem,2vw,1.2rem)]">
               Discover hidden Alpine gems, collect rewards, and explore beyond the crowds.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
